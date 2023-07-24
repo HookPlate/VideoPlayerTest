@@ -9,18 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let path = Bundle.main.url(forResource: "screencast_smaller", withExtension: ".mov")!
+//    let path = Bundle.main.url(forResource: "screencast_smaller", withExtension: ".mov")!
+   // let path = URL(string: "https://bit.ly/swswift")!
+    let url = URL(string:"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4")!
     
     @State var player = AVPlayer()
 
     
     var body: some View {
-        VideoPlayer(player: player)
-            .onAppear() {
-                player = AVPlayer(url: path)
-                player.play()
+        VideoPlayer(player: AVPlayer(url: url))
+            .onAppear {
+                
             }
+            
+            
     }
+        
 }
 
 struct ContentView_Previews: PreviewProvider {
