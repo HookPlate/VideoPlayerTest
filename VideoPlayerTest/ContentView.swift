@@ -11,18 +11,45 @@ struct ContentView: View {
     
 //    let path = Bundle.main.url(forResource: "screencast_smaller", withExtension: ".mov")!
    // let path = URL(string: "https://bit.ly/swswift")!
-    let url = URL(string:"https://dl.dropboxusercontent.com/scl/fi/fiw6h66hcbm34vbjyi410/shorter_movie.mov?rlkey=57n0nmp7km20wt9vmhnqvf2ja&dl=0")!
+    let url = URL(string:"https://dl.dropboxusercontent.com/scl/fi/y956mthwzemxzzosbm52u/Onboarding-Amagama-smaller-SD-480p.mov?rlkey=0mbifn0pv33zzzhjnzjm83wfw&dl=0")!
     
-    @State var player = AVPlayer
-
+    @State var player = AVPlayer()
+    @State var isShowingTutorial = false
     
     var body: some View {
-        
-        VideoPlayer(player: player(url))
-            .onAppear {
-                player.play()
-            }
+        GeometryReader { geometry in
+            let twoThirdsWidth = geometry.size.width * 2 / 2.5
+            let twoThirdsHeight = geometry.size.height * 2 / 2.5
             
+            VStack{
+                if isShowingTutorial {
+                    VideoPlayer(player: player)
+                        .frame(width: twoThirdsWidth, height: twoThirdsHeight)
+                        .aspectRatio(16/9, contentMode: .fit)
+                        .onAppear() {
+                            player = AVPlayer(url: url)
+                            player.play()
+                        }
+                } else {
+                    Button {
+                        isShowingTutorial.toggle()
+                    } label: {
+                        Image(systemName: "questionmark.circle")
+                            .font(.largeTitle)
+                            .foregroundColor(.green)
+                           // .frame(alignment: .topTrailing)
+                    }
+
+                }
+            }
+            .frame(width: geometry.size.width,
+                               height: geometry.size.height,
+                               alignment: .center)
+        }
+        
+        
+        
+        
             
     }
         
