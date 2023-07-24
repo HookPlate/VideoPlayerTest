@@ -17,6 +17,7 @@ struct ContentView: View {
 
     
     var body: some View {
+        
         VideoPlayer(player: player(url))
             .onAppear {
                 player.play()
