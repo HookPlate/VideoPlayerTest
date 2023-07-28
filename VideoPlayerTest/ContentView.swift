@@ -9,9 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     
-//    let path = Bundle.main.url(forResource: "screencast_smaller", withExtension: ".mov")!
+    let url = Bundle.main.url(forResource: "Onboarding Amagama smaller - SD 480p", withExtension: ".mov")!
    // let path = URL(string: "https://bit.ly/swswift")!
-    let url = URL(string:"https://dl.dropboxusercontent.com/scl/fi/y956mthwzemxzzosbm52u/Onboarding-Amagama-smaller-SD-480p.mov?rlkey=0mbifn0pv33zzzhjnzjm83wfw&dl=0")!
+//    let url = URL(string:"https://dl.dropboxusercontent.com/scl/fi/y956mthwzemxzzosbm52u/Onboarding-Amagama-smaller-SD-480p.mov?rlkey=0mbifn0pv33zzzhjnzjm83wfw&dl=0")!
     
     @State var player = AVPlayer()
     @State var isShowingTutorial = false
