@@ -13,6 +13,7 @@
 		547E34DA2A5C31C6002F3D43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 547E34D92A5C31C6002F3D43 /* Preview Assets.xcassets */; };
 		547E34E32A5C3854002F3D43 /* screencast.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 547E34E22A5C3854002F3D43 /* screencast.m4v */; };
 		54E8260C2A5D740900BF2215 /* screencast_smaller.mov in Resources */ = {isa = PBXBuildFile; fileRef = 54E8260B2A5D740900BF2215 /* screencast_smaller.mov */; };
+		54F38A302A73BC84009691EC /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F38A2F2A73BC84009691EC /* VideoPlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		547E34D92A5C31C6002F3D43 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		547E34E22A5C3854002F3D43 /* screencast.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = screencast.m4v; sourceTree = "<group>"; };
 		54E8260B2A5D740900BF2215 /* screencast_smaller.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = screencast_smaller.mov; sourceTree = "<group>"; };
+		54F38A2F2A73BC84009691EC /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				547E34D22A5C31C5002F3D43 /* VideoPlayerTestApp.swift */,
 				547E34D42A5C31C5002F3D43 /* ContentView.swift */,
+				54F38A2F2A73BC84009691EC /* VideoPlayerView.swift */,
 				547E34E22A5C3854002F3D43 /* screencast.m4v */,
 				54E8260B2A5D740900BF2215 /* screencast_smaller.mov */,
 				547E34D62A5C31C6002F3D43 /* Assets.xcassets */,
@@ -147,6 +150,7 @@
 			files = (
 				547E34D52A5C31C5002F3D43 /* ContentView.swift in Sources */,
 				547E34D32A5C31C5002F3D43 /* VideoPlayerTestApp.swift in Sources */,
+				54F38A302A73BC84009691EC /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
