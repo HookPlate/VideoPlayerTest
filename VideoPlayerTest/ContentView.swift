@@ -16,6 +16,7 @@ struct ContentView: View {
     @State var player = AVPlayer()
     @State var isShowingTutorial = false
     
+    
     var body: some View {
         GeometryReader { geometry in
             let twoThirdsWidth = geometry.size.width * 2 / 2.5
