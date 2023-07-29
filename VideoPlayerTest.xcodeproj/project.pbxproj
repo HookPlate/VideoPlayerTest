@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5470CABA2A7539D900182C56 /* Onboarding Amagama No Boarders Small.mov in Resources */ = {isa = PBXBuildFile; fileRef = 5470CAB92A7539D900182C56 /* Onboarding Amagama No Boarders Small.mov */; };
+		5470CABC2A753C1E00182C56 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5470CABB2A753C1E00182C56 /* VideoPlayerView.swift */; };
 		547E34D32A5C31C5002F3D43 /* VideoPlayerTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547E34D22A5C31C5002F3D43 /* VideoPlayerTestApp.swift */; };
 		547E34D52A5C31C5002F3D43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547E34D42A5C31C5002F3D43 /* ContentView.swift */; };
 		547E34D72A5C31C6002F3D43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 547E34D62A5C31C6002F3D43 /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5470CAB92A7539D900182C56 /* Onboarding Amagama No Boarders Small.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "Onboarding Amagama No Boarders Small.mov"; sourceTree = "<group>"; };
+		5470CABB2A753C1E00182C56 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		547E34CF2A5C31C5002F3D43 /* VideoPlayerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoPlayerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		547E34D22A5C31C5002F3D43 /* VideoPlayerTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerTestApp.swift; sourceTree = "<group>"; };
 		547E34D42A5C31C5002F3D43 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +63,7 @@
 		547E34D12A5C31C5002F3D43 /* VideoPlayerTest */ = {
 			isa = PBXGroup;
 			children = (
+				5470CABB2A753C1E00182C56 /* VideoPlayerView.swift */,
 				547E34D22A5C31C5002F3D43 /* VideoPlayerTestApp.swift */,
 				547E34D42A5C31C5002F3D43 /* ContentView.swift */,
 				547E34E22A5C3854002F3D43 /* screencast.m4v */,
@@ -66,6 +71,7 @@
 				547E34D62A5C31C6002F3D43 /* Assets.xcassets */,
 				54F38A312A73D006009691EC /* shorter_movie.mov */,
 				54F38A332A73D03B009691EC /* Onboarding Amagama smaller - SD 480p.mov */,
+				5470CAB92A7539D900182C56 /* Onboarding Amagama No Boarders Small.mov */,
 				547E34D82A5C31C6002F3D43 /* Preview Content */,
 			);
 			path = VideoPlayerTest;
@@ -139,6 +145,7 @@
 			files = (
 				54F38A342A73D03B009691EC /* Onboarding Amagama smaller - SD 480p.mov in Resources */,
 				54E8260C2A5D740900BF2215 /* screencast_smaller.mov in Resources */,
+				5470CABA2A7539D900182C56 /* Onboarding Amagama No Boarders Small.mov in Resources */,
 				54F38A322A73D006009691EC /* shorter_movie.mov in Resources */,
 				547E34E32A5C3854002F3D43 /* screencast.m4v in Resources */,
 				547E34DA2A5C31C6002F3D43 /* Preview Assets.xcassets in Resources */,
@@ -155,6 +162,7 @@
 			files = (
 				547E34D52A5C31C5002F3D43 /* ContentView.swift in Sources */,
 				547E34D32A5C31C5002F3D43 /* VideoPlayerTestApp.swift in Sources */,
+				5470CABC2A753C1E00182C56 /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let url = Bundle.main.url(forResource: "Onboarding Amagama smaller - SD 480p", withExtension: ".mov")!
+    let url = Bundle.main.url(forResource: "Onboarding Amagama No Boarders Small", withExtension: ".mov")!
    // let path = URL(string: "https://bit.ly/swswift")!
 //    let url = URL(string:"https://dl.dropboxusercontent.com/scl/fi/y956mthwzemxzzosbm52u/Onboarding-Amagama-smaller-SD-480p.mov?rlkey=0mbifn0pv33zzzhjnzjm83wfw&dl=0")!
     
@@ -27,10 +27,10 @@ struct ContentView: View {
                     ZStack(alignment: .topLeading) {
                         VideoPlayer(player: player)
                             .frame(width: twoThirdsWidth, height: twoThirdsHeight)
-                            .aspectRatio(16/9, contentMode: .fit)
+                         //   .aspectRatio(16/9, contentMode: .fit)
                             .onAppear() {
                                 player = AVPlayer(url: url)
-                                
+                                player.play()
                             }
                         Button {
                             isShowingTutorial.toggle()
