@@ -30,11 +30,17 @@ struct ContentView: View {
                             .aspectRatio(16/9, contentMode: .fit)
                             .onAppear() {
                                 player = AVPlayer(url: url)
-                                player.play()
+                                
                             }
-                        Image(systemName: "xmark.circle")
-                            .font(.largeTitle.bold())
-                            .foregroundColor(.white)
+                        Button {
+                            isShowingTutorial.toggle()
+                            player.pause()
+                        } label: {
+                            Image(systemName: "xmark.circle")
+                                .font(.largeTitle.bold())
+                                .foregroundColor(.white)
+                        }
+                        
                         
                     }
                     
