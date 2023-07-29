@@ -24,13 +24,20 @@ struct ContentView: View {
             
             VStack{
                 if isShowingTutorial {
-                    VideoPlayer(player: player)
-                        .frame(width: twoThirdsWidth, height: twoThirdsHeight)
-                        .aspectRatio(16/9, contentMode: .fit)
-                        .onAppear() {
-                            player = AVPlayer(url: url)
-                            player.play()
-                        }
+                    ZStack {
+                        VideoPlayer(player: player)
+                            .frame(width: twoThirdsWidth, height: twoThirdsHeight)
+                          //  .aspectRatio(16/9, contentMode: .fill)
+                            .onAppear() {
+                                player = AVPlayer(url: url)
+                                player.play()
+                                
+                            }
+                        Image(systemName: "xmark.circle")
+                            .font(.largeTitle.bold())
+                           
+                    }
+
                 } else {
                     Button {
                         isShowingTutorial.toggle()
