@@ -15,7 +15,7 @@ struct VideoPlayerView: View {
     @State private var isVideoPlaying = false
     @State private var videoPlayer: AVPlayer?
 
-    private let videoURL = URL(string:"https://dl.dropboxusercontent.com/scl/fi/y956mthwzemxzzosbm52u/Onboarding-Amagama-smaller-SD-480p.mov?rlkey=0mbifn0pv33zzzhjnzjm83wfw&dl=0")!
+     let videoURL = URL(string:"https://dl.dropboxusercontent.com/scl/fi/y956mthwzemxzzosbm52u/Onboarding-Amagama-smaller-SD-480p.mov?rlkey=0mbifn0pv33zzzhjnzjm83wfw&dl=0")!
 
     var body: some View {
         ZStack {
