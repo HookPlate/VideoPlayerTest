@@ -22,7 +22,7 @@ struct ContentView: View {
             let twoThirdsWidth = geometry.size.width * 2 / 2.5
             let twoThirdsHeight = geometry.size.height * 2 / 2.5
             
-            VStack{
+            ZStack(alignment: .topTrailing){
                 if isShowingTutorial {
                     VideoPlayer(player: player)
                         .frame(width: twoThirdsWidth, height: twoThirdsHeight)
@@ -31,6 +31,15 @@ struct ContentView: View {
                             player = AVPlayer(url: url)
                             player.play()
                         }
+                    Button {
+                        isShowingTutorial.toggle()
+                        player.pause()
+                    } label: {
+                        Image(systemName: "xmark.circle")
+                            .font(.title)
+                            .foregroundColor(.white)
+                    }
+
                 } else {
                     Button {
                         isShowingTutorial.toggle()
