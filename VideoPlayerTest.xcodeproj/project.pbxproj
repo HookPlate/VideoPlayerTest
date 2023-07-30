@@ -25,6 +25,7 @@
 		547E34E22A5C3854002F3D43 /* screencast.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = screencast.m4v; sourceTree = "<group>"; };
 		54E8260B2A5D740900BF2215 /* screencast_smaller.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = screencast_smaller.mov; sourceTree = "<group>"; };
 		54F38A2F2A73BC84009691EC /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		54F708B12A766A8D0038AEA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +58,7 @@
 		547E34D12A5C31C5002F3D43 /* VideoPlayerTest */ = {
 			isa = PBXGroup;
 			children = (
+				54F708B12A766A8D0038AEA3 /* Info.plist */,
 				547E34D22A5C31C5002F3D43 /* VideoPlayerTestApp.swift */,
 				547E34D42A5C31C5002F3D43 /* ContentView.swift */,
 				54F38A2F2A73BC84009691EC /* VideoPlayerView.swift */,
@@ -282,6 +284,7 @@
 				DEVELOPMENT_TEAM = AVZGHFFGZD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VideoPlayerTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -311,6 +314,7 @@
 				DEVELOPMENT_TEAM = AVZGHFFGZD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VideoPlayerTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
