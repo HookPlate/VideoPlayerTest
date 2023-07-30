@@ -26,6 +26,8 @@ struct AVPlayerControllerRepresented: UIViewControllerRepresentable {
         let playerViewController = AVPlayerViewController()
         let player = AVPlayer(url: videoURL)
         playerViewController.player = player
+       // playerViewController.videoGravity = .resizeAspectFill
+        playerViewController.view.backgroundColor = .white
         return playerViewController
     }
 

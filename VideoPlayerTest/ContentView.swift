@@ -15,23 +15,26 @@ struct ContentView: View {
     
     @State var player = AVPlayer()
     @State var isShowingTutorial = false
+ //   @State var myPlayer = VideoPlayerView(videoURL: url)
     
     
     var body: some View {
         GeometryReader { geometry in
             let twoThirdsWidth = geometry.size.width * 2 / 2.5
             let twoThirdsHeight = geometry.size.height * 2 / 2.5
-            
+
             VStack{
                 if isShowingTutorial {
                     ZStack(alignment: .topLeading) {
-                        VideoPlayer(player: player)
-                            .frame(width: twoThirdsWidth, height: twoThirdsHeight)
+                        VideoPlayerView(videoURL: url)
+      //                      .edgesIgnoringSafeArea(.all) // To make the video full-screen
+//                        VideoPlayer(player: player)
+                           .frame(width: twoThirdsWidth, height: twoThirdsHeight)
                          //   .aspectRatio(16/9, contentMode: .fit)
-                            .onAppear() {
-                                player = AVPlayer(url: url)
-                                player.play()
-                            }
+//                            .onAppear() {
+//                                player = AVPlayer(url: url)
+//                                player.play()
+//                            }
                         Button {
                             isShowingTutorial.toggle()
                             player.pause()
@@ -40,10 +43,10 @@ struct ContentView: View {
                                 .font(.largeTitle.bold())
                                 .foregroundColor(.white)
                         }
-                        
-                        
+
+
                     }
-                    
+
                 } else {
                     Button {
                         isShowingTutorial.toggle()
@@ -60,6 +63,7 @@ struct ContentView: View {
                                height: geometry.size.height,
                                alignment: .center)
         }
+        
         
         
         
